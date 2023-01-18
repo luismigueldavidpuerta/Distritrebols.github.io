@@ -1,0 +1,295 @@
+body{
+
+    background-color: #F9AB5C;
+    background-repeat: repeat;
+    background-size: 100% ;
+}
+
+ul{
+    list-style: none;
+}
+
+#imagenPrincipal img{
+    width: 100%;
+    height: auto;
+}
+
+.link img{
+    max-width: 60px;
+    padding-top: 5px;
+}
+
+.link{
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 9%;
+    text-decoration: none;
+    color: #fff;
+}
+
+.link::before,
+.link::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffaee7;
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.link::before{
+    top: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before{
+    bottom: -3px;
+    transform-origin: left;
+}
+
+.link:hover::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after {
+
+    transform: scaleX(1);
+}
+
+/*----- footer -----*/
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+  }
+  
+   footer .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  footer .contact-info ul {
+    text-align: left;
+  }
+  
+  footer .contact-info ul li {
+    list-style: none;
+  } 
+  
+  footer .contact-info ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer .contact-info ul li a:hover {
+    color: #ffaee7;
+  }
+  
+  footer .social-media p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  footer .social-media ul {
+    margin-top: 8px;
+    display: flex;
+  }
+  
+  footer .social-media ul li a img {
+    width: 35px;
+    margin: 0 10px;
+  } 
+  
+  footer .social-media ul li a:hover {
+    filter: brightness(1.25);
+  }
+  
+  footer .developers p {
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  footer .developers p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+/*----- Main -----*/
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 34px;
+    color: #fff;
+}
+
+ section {
+    margin-left: 17%;
+    margin-right: 17%;
+} 
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 34px;
+    color: #fff;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 28px;
+}
+
+.visao_missao_valores {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.visao_missao_valores h2 {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 10px 0 10px;
+} 
+
+.cards div {
+    width: 30%;
+    text-align: center;
+    border: 1px solid #ffaee7;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.cards div p {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+h4{
+    text-align: center;
+    color: #fff;
+}
+
+.pictures {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.associados2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.associados {
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5rem;
+}
+
+.associados img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid #ffaee7;
+    object-fit: cover;
+}
+
+.pictures h3 {
+  font-size: 34px;
+  color: #fff;
+}
+
+
+.associados figcaption {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+section h3 {
+    text-align: center;
+    margin-top: 30px;
+    color: #ffaee7;
+}
+
+p, figcaption{
+    
+    color: #fff;
+}
+
+
+/*----------------- Media ------------------*/
+@media screen and (max-width: 1100px) {
+
+ main {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+ .cards {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .cards div {
+    width: 80%;
+    flex-wrap: wrap;
+    margin: 10px auto;
+ }
+
+ .associados img {
+    width: 100px;
+    height: 100px;
+ }
+
+}
+
+@media screen and (max-width: 480px) {
+    
+    section {
+    margin-left: 5%;
+    margin-right: 5%;
+ }  
+
+ .associados {
+    align-items: center;
+    justify-content: center;
+ }
+
+ .associados img {
+    width: 150px;
+    height: 150px;
+ }
+
+ .associados:last-child {
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+}

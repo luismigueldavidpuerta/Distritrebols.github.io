@@ -1,0 +1,139 @@
+.navbar-collapse li{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #F9AB5C;
+    background-repeat: repeat;
+    background-size: 100% ;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#imagenPrincipal img{
+    width: 100%;
+    height: auto;
+}
+
+.link img{
+    max-width: 60px;
+    padding-top: 5px;
+}
+
+.link{
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 9%;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.link::before,
+.link::after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffaee7;
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+
+.link::before{
+    top: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before{
+    bottom: -3px;
+    transform-origin: left;
+}
+
+.link:hover::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after {
+
+    transform: scaleX(1);
+}
+
+/*----- footer -----*/
+footer {
+    background-color: #BF712C;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+  }
+  
+   footer .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  footer .contact-info ul {
+    text-align: left;
+  }
+  
+  footer .contact-info ul li {
+    list-style: none;
+  } 
+  
+  footer .contact-info ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer .contact-info ul li a:hover {
+    color: #ffaee7;
+  }
+  
+  footer .social-media p {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  footer .social-media ul {
+    margin-top: 8px;
+    display: flex;
+  }
+  
+  footer .social-media ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  footer .social-media ul li a img {
+    width: 70px;
+    margin: 0 10px;
+  } 
+  
+  footer .social-media ul li a:hover {
+    filter: brightness(1.25);
+  }
+  
+  footer .developers p {
+    font-size: 13px;
+    color: #006d77;
+  }
+  
+  footer .developers p a{
+    color: #006d77;
+    font-weight: 600;
+    text-decoration: none;
+  }
